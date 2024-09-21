@@ -1,0 +1,33 @@
+{
+    "config": {
+        "flow_title": "PureTools 4x1 HDMI Switcher",
+        "step": {
+            "user": {
+                "title": "PureTools 4x1 HDMI Switcher",
+                "data": {
+                    "host": "Host",
+                    "port": "Port"
+                }
+            }
+        },
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "hdmi1": "HDMI input 1",
+                    "hdmi2": "HDMI input 2",
+                    "hdmi3": "HDMI input 3",
+                    "hdmi4": "HDMI input 4"
+                }
+            }
+        }
+    }
+}

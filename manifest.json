@@ -1,0 +1,11 @@
+{
+    "domain": "puretools_remote",
+    "name": "PureTools 4x1 HDMI Switcher",
+    "codeowners": ["@m-lange"],
+    "dependencies": [],
+    "config_flow": true,
+    "documentation": "https://https://github.com/m-lange/puretools_remote",
+    "iot_class": "local_polling",
+    "requirements": [],
+    "version": "0.5.0"
+}
