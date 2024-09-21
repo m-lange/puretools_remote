@@ -116,25 +116,19 @@ class PuretoolsMediaPlayerEntity(MediaPlayerEntity):
     async def async_select_source(self, source: str) -> None:
         """Select input source."""
 
-        _LOGGER.warning("async_select_source: %s", source)
-
         if self._auto_mode:
             await self._device.manual()
 
         if source == self._config_entry.options.get("hdmi1") or source == "HDMI 1":
-            _LOGGER.warning("HDMI input 1")
             await self._device.hdmi1()
 
         elif source ==  self._config_entry.options.get("hdmi2")  or source == "HDMI 2":
-            _LOGGER.warning("HDMI input 2")
             await self._device.hdmi2()
 
         elif source ==  self._config_entry.options.get("hdmi3")  or source == "HDMI 3":
-            _LOGGER.warning("HDMI input 3")
             await self._device.hdmi3()
 
         elif source ==  self._config_entry.options.get("hdmi4")  or source ==  "HDMI 4":
-            _LOGGER.warning("HDMI input 4")
             await self._device.hdmi4()
 
 
